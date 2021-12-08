@@ -1,6 +1,6 @@
 # Date: 08/12/2021
 # Author: Yousaf K Hamza
-# Description: CloudForamtion Stack EC2 instance and Security Group YAML Sample
+# Description: CloudForamtion Stack creation with EC2 instance and Security Group in a YAML Format
 
 # ----------------------------------------------------
 # CloudFormation Stack in YAML
