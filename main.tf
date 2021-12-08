@@ -1,3 +1,10 @@
+# Date: 08/12/2021
+# Author: Yousaf K Hamza
+# Description: CloudForamtion stack terraform sample
+
+# ----------------------------------------------------
+# CloudFormation Stack
+# ----------------------------------------------------
 resource "aws_cloudformation_stack" "ec2_instance" {
   name = "ec2-instance-stack"
 
