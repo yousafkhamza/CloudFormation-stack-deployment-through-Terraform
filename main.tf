@@ -8,5 +8,4 @@ resource "aws_cloudformation_stack" "ec2_instance" {
   template_body = file("${var.cf_file}")
   
   tags = tomap({"Name" = "CF-EC2-Stack"})
-
 }
