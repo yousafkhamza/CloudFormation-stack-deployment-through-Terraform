@@ -3,7 +3,7 @@
 # Description: CloudForamtion Stack EC2 instance and Security Group YAML Sample
 
 # ----------------------------------------------------
-# Cloud Formation Stack YAML
+# CloudFormation Stack in YAML
 # ----------------------------------------------------
 AWSTemplateFormatVersion: '2010-09-09'
 Description: 'AWS CloudFormation Sample Template EC2InstanceWithSecurityGroupSample:
