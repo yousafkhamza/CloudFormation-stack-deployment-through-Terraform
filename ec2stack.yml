@@ -1,3 +1,10 @@
+# Date: 08/12/2021
+# Author: Yousaf K Hamza
+# Description: CloudForamtion Stack EC2 instance and Security Group YAML Sample
+
+# ----------------------------------------------------
+# Cloud Formation Stack YAML
+# ----------------------------------------------------
 AWSTemplateFormatVersion: '2010-09-09'
 Description: 'AWS CloudFormation Sample Template EC2InstanceWithSecurityGroupSample:
   Create an Amazon EC2 instance running the Amazon Linux AMI. The AMI is chosen based
@@ -5,6 +12,10 @@ Description: 'AWS CloudFormation Sample Template EC2InstanceWithSecurityGroupSam
   for the instance to give you SSH access. **WARNING** This template creates an Amazon
   EC2 instance. You will be billed for the AWS resources used if you create a stack
   from this template.'
+  
+# ----------------------------------------------------
+# Parameters like as we can pass values like variables
+# ----------------------------------------------------
 Parameters:
   KeyName:
     Description: Name of an existing EC2 KeyPair to enable SSH access to the instance
@@ -25,6 +36,10 @@ Parameters:
   LatestAmiId:
     Type:  'AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>'
     Default: '/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2'
+    
+# ----------------------------------------------------
+# Resource Creation for EC2
+# ----------------------------------------------------
 Resources:
   EC2Instance:
     Type: AWS::EC2::Instance
@@ -36,6 +51,10 @@ Resources:
       Tags:
         - Key: Name
           Value: CF-EC2
+          
+# ----------------------------------------------------
+# Resource Creation for Securty group
+# ----------------------------------------------------
   InstanceSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
@@ -45,6 +64,10 @@ Resources:
         FromPort: 22
         ToPort: 22
         CidrIp: !Ref 'SSHLocation'
+        
+# ----------------------------------------------------
+# After stack creation outputs act like a terraform output
+# ----------------------------------------------------
 Outputs:
   InstanceId:
     Description: InstanceId of the newly created EC2 instance
