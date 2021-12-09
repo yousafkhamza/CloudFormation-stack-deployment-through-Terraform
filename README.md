@@ -60,7 +60,7 @@ key_name = "owntest"        # this one is for study purpose so you guys mention 
 instance_type = "t2.micro"  # mention which instance type would you need.
 cf_file = "./ec2stack.yml"  # CF stack file. so, if you have any ec2 instance and security group related changes? then please go and change the same as CF format because that file doesn't have any dependancies with terraform
 ```
-_provider.tf_   [`if you're using you can skip the credential passing`]
+_provider.tf_   [`if you're using IAM role you can skip the credential passing`]
 ```
 provider "aws" {
 region = var.aws_region
