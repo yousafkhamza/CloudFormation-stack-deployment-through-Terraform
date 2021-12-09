@@ -206,19 +206,18 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 ----
 ## How to use CloudFormation stack without Terraform
 _Screenshot 1_
-
 ![alt_txt](https://i.ibb.co/hKg0TVD/1.png)
+
 _Screenshot 2_
-
 ![alt_txt](https://i.ibb.co/2dYzgTh/2.png)
+
 _Screenshot 3_
-
 ![alt_txt](https://i.ibb.co/VSWmH3h/3.png)
+
 _Screenshot 4_
-
 ![alt_txt](https://i.ibb.co/T4dN4YG/4.png)
-_Screenshot 5_
 
+_Screenshot 5_
 ![alt_txt](https://i.ibb.co/Pmk7Ft5/5.png)
 
 ----
