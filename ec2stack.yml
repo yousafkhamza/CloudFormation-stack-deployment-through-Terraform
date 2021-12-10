@@ -53,7 +53,7 @@ Resources:
           Value: CF-EC2
           
 # ----------------------------------------------------
-# Resource Creation for Securty group
+# Resource Creation for Security group
 # ----------------------------------------------------
   InstanceSecurityGroup:
     Type: AWS::EC2::SecurityGroup
