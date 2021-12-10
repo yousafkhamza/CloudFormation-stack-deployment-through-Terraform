@@ -4,21 +4,21 @@
 
 ---
 ## Description
-This is a combained infrastructure deployment using AWS CloudFormation and Terraform. Also, you guys have a doubt why we used the both at the same time. Because I just tried to deploy a CloudFormation stack deployment automated through terraform so who you guys avoid the terraform section then you guys can deploy the CloudFormation stack wisely there have not to a mandatory thing but I show you guys this things are possible. 
+This is a combined infrastructure deployment using AWS CloudFormation and Terraform. Also, you guys have a doubt why we used both at the same time. Because I just tried to deploy a CloudFormation stack deployment automated through terraform so who you guys avoid the terraform section then you guys can deploy the CloudFormation stack wisely there have not to a mandatory thing but I show you guys these things are possible. 
 
 #### Brief
 ----
-AWS CloudFormation Sample Template EC2InstanceWithSecurityGroupSample:   Create an Amazon EC2 instance running the Amazon Linux AMI. The AMI is chosen based on the region in which the stack is run. This example creates an EC2 security group for the instance to give you SSH access. **WARNING** This template creates an Amazon   EC2 instance. You will be billed for the AWS resources used if you create a stack from this template. Also, i repeat the template deployment use both manual and terraform automated.
+AWS CloudFormation Sample Template EC2InstanceWithSecurityGroupSample:   Create an Amazon EC2 instance running the Amazon Linux AMI. The AMI is chosen based on the region in which the stack is run. This example creates an EC2 security group for the instance to give you SSH access. **WARNING** This template creates an Amazon   EC2 instance. You will be billed for the AWS resources used if you create a stack from this template. Also, I repeat the template deployment using both manual and terraform automated.
 
 ----
 ## Feature
 - Easy to deploy ec2 instance and security group using CF template
 - Easy to deploy CF stack through terraform 
-- Region wise AMI fetching automatically
+- Region-wise AMI fetching automatically
 
 ----
 ## Pre-Requests
-- Existing a instance keypair
+- Existing an instance keypair
 - Basic Knowledge of Terraform
 - Basic Knowledge of CloudFormation (YAML)
 - [AWS Access Key and Secret Key](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html)
@@ -26,7 +26,7 @@ AWS CloudFormation Sample Template EC2InstanceWithSecurityGroupSample:   Create 
 #### Installations
 ##### Terraform
 ----
-- Linux: (Please note that only for linux no need to download any repo or files)
+- Linux: (Please note that only for Linux no need to download any repo or files)
 ```
 curl -Ls https://raw.githubusercontent.com/yousafkhamza/Terraform_installation/main/terraform.sh | bash
 ```
@@ -48,7 +48,7 @@ git clone https://github.com/yousafkhamza/CloudFormation-stack-deployment-throug
 ```
 ----
 ## How to use with Terraform
-> **Please makesure you have entered the Access key, Secret key (or either IAM role attached) and Instance keypair name so please verify terrform.tfvars and provider.tf file before as well**
+> **Please make sure you have entered the Access key, Secret key (or either IAM role attached), and Instance keypair name so please verify terrform.tfvars and provider.tf file before as well**
 
 ```
 cd CloudFormation-stack-deployment-through-Terraform
@@ -56,9 +56,9 @@ cd CloudFormation-stack-deployment-through-Terraform
 _terraform.tfvars_
 ```
 aws_region = "us-east-1"    # mention which region would you need.
-key_name = "owntest"        # this one is for study purpose so you guys mention here existing keypair name on under your aws account which you using.
+key_name = "owntest"        # this one is for study purposes so you guys mention here the existing key pair name under your AWS account which you using.
 instance_type = "t2.micro"  # mention which instance type would you need.
-cf_file = "./ec2stack.yml"  # CF stack file. so, if you have any ec2 instance and security group related changes? then please go and change the same as CF format because that file doesn't have any dependancies with terraform.
+cf_file = "./ec2stack.yml"  # CF stack file. so, if you have any ec2 instance and security group-related changes? then please go and change the same as CF format because that file doesn't have any dependencies with terraform.
 ```
 _provider.tf_   [`if you're using IAM role you can skip the credential passing`]
 ```
@@ -158,7 +158,7 @@ Terraform will perform the following actions:
                       Value: CF-EC2
 
             # ----------------------------------------------------
-            # Resource Creation for Securty group
+            # Resource Creation for Security group
             # ----------------------------------------------------
               InstanceSecurityGroup:
                 Type: AWS::EC2::SecurityGroup
@@ -276,7 +276,7 @@ Resources:
           Value: CF-EC2
 
 # ----------------------------------------------------
-# Resource Creation for Securty group
+# Resource Creation for Security group
 # ----------------------------------------------------
   InstanceSecurityGroup:
     Type: AWS::EC2::SecurityGroup
@@ -326,7 +326,7 @@ resource "aws_cloudformation_stack" "ec2_instance" {
 
 ----
 ## Conclusion
-This is a combained infrastructure deployment using AWS CloudFormation and Terraform. and it's created for a try how to use hybrid deploymnet of IaC (Terraform, CloudFormation) 
+This is a combined infrastructure deployment using AWS CloudFormation and Terraform. and it's created for a try how to use hybrid deployment of IaC (Terraform, CloudFormation) 
 
 ### ⚙️ Connect with Me 
 
