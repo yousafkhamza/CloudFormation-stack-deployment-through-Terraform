@@ -4,7 +4,7 @@
 
 ---
 ## Description
-This is a combined infrastructure deployment using AWS CloudFormation and Terraform. Also, you guys have a doubt why we used both at the same time. Because I just tried to deploy a CloudFormation stack deployment automated through terraform so who you guys avoid the terraform section then you guys can deploy the CloudFormation stack wisely there have not to a mandatory thing but I show you guys these things are possible. 
+This is a combined infrastructure deployment using AWS CloudFormation and Terraform. Also, you guys have a doubt why used both at the same time. Because I just tried to deploy a CloudFormation stack through terraform. Hence, we can avoid automating AWS manual CloudFormation selection and related steps as well, and also, we can simply use the same in a CI/CD pipeline that isn't AWS CodePipeline. Furthermore, you can use that CloudFormation code directly through the AWS console so you can skip terraform that if you don't need it. In addition, I had provided both console and terraform steps in README so please read the same and do with good practice.
 
 #### Brief
 ----
