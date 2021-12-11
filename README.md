@@ -327,6 +327,12 @@ resource "aws_cloudformation_stack" "ec2_instance" {
 ```
 
 ----
+## Referance
+- https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html
+- https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudformation_stack
+- https://octopus.com/blog/aws-cloudformation-ec2-examples
+
+----
 ## Conclusion
 This is a combined infrastructure deployment using AWS CloudFormation and Terraform. and it's created for a try how to use hybrid deployment of IaC (Terraform, CloudFormation) 
 
